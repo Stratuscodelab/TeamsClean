@@ -9,10 +9,10 @@ V2
 
 Amendments to the following have been completed 
 
-*Icon for Desktop - Created a new icon using Affinity Designer
-*Main body of application has been changed to include the new image
-*Notification to show if Teams is running on system
-*Button added to close all instances of application running to enable application to clean cache.
+* Icon for Desktop - Created a new icon using Affinity Designer
+* Main body of application has been changed to include the new image
+* Notification to show if Teams is running on system
+* Button added to close all instances of application running to enable application to clean cache.
 
 
 
