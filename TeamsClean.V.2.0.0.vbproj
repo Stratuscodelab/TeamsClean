@@ -10,6 +10,7 @@
     <Description>Created to clean directories that get cluttered by Teams application causing slow and unresponsive experience.</Description>
     <Copyright>Drewsoft</Copyright>
     <PackageReleaseNotes>Release Version 1</PackageReleaseNotes>
+    <ApplicationIcon>Resources\teamscleanico.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
