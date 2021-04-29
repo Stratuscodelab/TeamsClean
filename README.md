@@ -15,5 +15,5 @@ Amendments to the following have been completed
 * Button added to close all instances of application running to enable application to clean cache.
 
 
-![Teamsclean](https://github.com/digitalcluster/tc_img.JPG)
+![Teamsclean](tc_img.JPG)
 
