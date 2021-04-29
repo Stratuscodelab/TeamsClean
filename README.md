@@ -11,22 +11,9 @@ Amendments to the following have been completed
 
 * Icon for Desktop - Created a new icon using Affinity Designer
 * Main body of application has been changed to include the new image
-* Notification to show if Teams is running on system
+* Notification to show if Microsoft Teams is running on system
 * Button added to close all instances of application running to enable application to clean cache.
 
 
+![Teamsclean](https://github.com/digitalcluster/tc_img.JPG)
 
-
-V1 Issues.
-
-There seem to be no issues at present with the application. 
-
-To-Do 
-
-Will require the following 
-
-* Icon for desktop - Current icon is borrowed from free creative commons ( test purposes )
-* Links to website Stratuslabs.net in about popup window
-* Main body of application image needs to be updated.
-
--
