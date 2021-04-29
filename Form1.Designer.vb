@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
@@ -33,6 +33,8 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -115,7 +117,7 @@ Partial Class Form1
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(970, 345)
+        Me.TextBox1.Size = New System.Drawing.Size(969, 174)
         Me.TextBox1.TabIndex = 8
         Me.TextBox1.Text = "TeamsClean! " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Please make sure Microsoft Teams is closed before you continue usin" &
     "g this application." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Click on the boxes below to clean the junk files created by" &
@@ -130,12 +132,35 @@ Partial Class Form1
         Me.Button8.Text = "About"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AccessibleName = ""
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Black", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(533, 286)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(969, 182)
+        Me.Label1.TabIndex = 12
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(875, 356)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(266, 46)
+        Me.Button10.TabIndex = 13
+        Me.Button10.Text = "Close MS Teams"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1614, 660)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
@@ -147,9 +172,10 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.RightToLeftLayout = True
-        Me.Text = "TeamsClean V.0.1"
+        Me.Text = "TeamsClean V.0.2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -166,4 +192,6 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button8 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button10 As Button
 End Class

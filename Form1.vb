@@ -1,5 +1,7 @@
 ﻿Imports System.IO
 Public Class Form1
+    Private wscript As Object
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             Dim appData As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\Microsoft\Teams\Cache"
@@ -90,5 +92,47 @@ Public Class Form1
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         About.Show()
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs)
+        If Process.GetProcessesByName("Teams").Count > 0 Then
+
+            MsgBox("Microsoft Teams is running")
+        Else
+            MsgBox("Microsoft Teams is NOT running")
+        End If
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.MouseHover
+        Label1.Parent = Me
+        Label1.BackColor = Color.Transparent
+        If Process.GetProcessesByName("Teams").Count > 0 Then
+            Label1.ForeColor = Color.Red
+            Label1.Text = "Microsoft Teams is running"
+        Else
+            Label1.ForeColor = Color.Green
+            Label1.Text = "Microsoft Teams is NOT running"
+        End If
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim myProcesses() As Process
+        Dim myProcess As Process
+
+        myProcesses = Process.GetProcessesByName("Teams")
+
+        Try
+
+            If myProcesses.Length > 0 Then
+                For Each myProcess In myProcesses
+                    If myProcess IsNot Nothing Then
+                        myProcess.Kill()
+                    End If
+
+                Next
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
     End Sub
 End Class
